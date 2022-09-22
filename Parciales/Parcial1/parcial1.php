@@ -12,10 +12,13 @@
 				if($y==($mitad-1) || $y==$mitad) {
 					$n = rand(101,200);
 					$matriz[$y][$x] = $n;
-					$multiplicacion = $n*$multiplicacion;
-
-					if($x==0 || $x==($num-1))
+					
+					if($x==0 || $x==($num-1)) {
 						$matriz[$y][$x] = 0;
+					}
+
+					$multiplicacion = $matriz[$y][$x]*$multiplicacion;
+
 				}else {
 					$matriz[$y][$x] = 0;
 				}
@@ -37,6 +40,4 @@
 	}else {
 		echo "Numero ingresado no es par";
 	}
-
-	
 ?>
