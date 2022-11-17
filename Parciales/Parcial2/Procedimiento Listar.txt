@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_listar_factorial`()
+BEGIN
+
+	SELECT ID,N,Factorial,Sumatoria FROM parcial2;
+
+END$$
+DELIMITER ;

@@ -1,0 +1,12 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_agregar_factorial`(
+	parameter_n INT(11),
+    parameter_factorial INT(11),
+    parameter_sumatoria INT(11)
+)
+BEGIN
+
+INSERT INTO parcial2(N,Factorial,Sumatoria) VALUES(parameter_n,parameter_factorial,parameter_sumatoria);
+
+END$$
+DELIMITER ;
